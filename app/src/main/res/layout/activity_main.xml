@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgAmsterdam"
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            app:srcCompat="@drawable/amsterdam" />
+
+        <ImageView
+            android:id="@+id/imgCanalDeBrujas"
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/brujas" />
+
+        <TextView
+            android:id="@+id/amsterdam"
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:text="Amsterdam" />
+
+        <TextView
+            android:id="@+id/canaldebrujas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canal de Brujas" />
+
+        <ImageView
+            android:id="@+id/imgCerdena"
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            app:srcCompat="@drawable/cerdena" />
+
+        <ImageView
+            android:id="@+id/imgNoteDame"
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            app:srcCompat="@drawable/notredame" />
+
+        <TextView
+            android:id="@+id/cerdena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playa de Cerdeña" />
+
+        <TextView
+            android:id="@+id/notredame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notre Dame" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
